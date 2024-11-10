@@ -41,7 +41,7 @@ public:
     bool Pertenece(int valor) const;
 
     void Mostrar() const;
-    int ContarX(const Fila& fila, item X);
+ 
      friend class Iterador;
 };
 

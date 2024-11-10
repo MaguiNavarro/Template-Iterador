@@ -1,11 +1,11 @@
 #include <iostream>
 
-#include "Fila.cpp"
-#include "Iterador.cpp"
+#include "Fila.h"
+#include "Iterador.h"
 
 
 using namespace std;
-
+int ContarX(const Fila& fila, item X);
 
 
 int main() {
@@ -35,9 +35,22 @@ int main() {
 
      // Prueba de la función ContarX
     item X = 5;
-    int cantidad = fila.ContarX(fila, X);
+    int cantidad = ContarX(fila, X);
     std::cout << "Cantidad de elementos iguales a " << X << ": " << cantidad << std::endl;
 
     return 0;
 	
+}
+int  ContarX( const Fila& fila, item X) {
+    Iterador iterador(fila);
+    int contador = 0;
+
+    while (iterador.hayMasElementos()) {
+        if (iterador.elementoActual() == X) {
+            contador++;
+        }
+        iterador.avanzar();
+    }
+
+    return contador;
 }

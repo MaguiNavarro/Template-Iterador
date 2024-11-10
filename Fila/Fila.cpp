@@ -1,7 +1,5 @@
 #include "Fila.h"
 
-
-
 // Constructor por defecto que crea una fila vacía
 Fila::Fila() : frente(nullptr), final(nullptr), longitud(0) {}
 
@@ -95,16 +93,5 @@ void Fila::Mostrar() const {
 //     return contador;
 // }
 
-int Fila:: ContarX( const Fila& fila, item X) {
-    Iterador iterador(fila);
-    int contador = 0;
 
-    while (iterador.hayMasElementos()) {
-        if (iterador.elementoActual() == X) {
-            contador++;
-        }
-        iterador.avanzar();
-    }
 
-    return contador;
-}

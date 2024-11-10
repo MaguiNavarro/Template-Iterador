@@ -1,10 +1,9 @@
 #ifndef ITERADOR_H_
 #define ITERADOR_H_
-#include "Fila.h"
 using namespace std;
-
-
-
+#include "Nodo.h" 
+#include "Fila.h"
+class Fila;
 class Iterador
 {
     const Fila& fila;  // Referencia constante a la fila que queremos iterar
@@ -17,10 +16,6 @@ public:
      void  avanzar() ;
 
 };
-
-
-
-
 
 
 #endif // ITERADOR_H_
