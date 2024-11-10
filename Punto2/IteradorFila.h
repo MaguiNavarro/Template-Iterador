@@ -2,7 +2,10 @@
 #define ITERADORFILA_H
 
 #include "Fila.h"
+#include "Nodo.h"
 
+template <typename T>
+class Fila;
 template <typename T>
 class IteradorFila {
 private:
