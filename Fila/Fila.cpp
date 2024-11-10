@@ -95,7 +95,7 @@ void Fila::Mostrar() const {
 //     return contador;
 // }
 
-int Fila:: ContarX( Fila fila, item X) {
+int Fila:: ContarX( const Fila& fila, item X) {
     Iterador iterador(fila);
     int contador = 0;
 

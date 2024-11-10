@@ -11,7 +11,7 @@ class Iterador
     Nodo* actual;      // Puntero al nodo actual
 
 public:
-    Iterador( const Fila& f);
+   Iterador(const Fila& f);
      bool hayMasElementos() const;
      int  elementoActual() const ;
      void  avanzar() ;

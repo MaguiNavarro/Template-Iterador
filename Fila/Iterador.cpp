@@ -2,7 +2,7 @@
 #include "Iterador.h"
 
 
-Iterador::Iterador(const Fila& f):fila(f), actual(f.frente)
+Iterador::Iterador(const Fila& f) : fila(f)
 {}
  // Verifica si hay más elementos en la fila
 bool Iterador:: hayMasElementos() const {

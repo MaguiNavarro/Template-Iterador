@@ -7,10 +7,9 @@
 using namespace std;
 
 
-
 class Fila
 {
-
+ private:
     Nodo *frente;
     Nodo *final;
     int longitud;
@@ -42,7 +41,7 @@ public:
     bool Pertenece(int valor) const;
 
     void Mostrar() const;
-    int ContarX( Fila fila, item X);
+    int ContarX(const Fila& fila, item X);
      friend class Iterador;
 };
 
