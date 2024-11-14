@@ -3,10 +3,10 @@
 
 #include "IteradorFila.h"
 
-template <typename T>
-int ContarX(const Fila<T>& fila, const T& elemento) {
+template <typename X>
+int ContarX(const Fila<X>& fila, const X& elemento) {
     int contador = 0;
-    IteradorFila<T> iterador(fila);
+    IteradorFila<X> iterador(fila);
     while (iterador.hayMasElementos()) {
         if (iterador.elementoActual() == elemento) {
             contador++;
